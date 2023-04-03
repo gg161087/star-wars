@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-image: url(https://i.blogs.es/69fdcc/star-wars-saga/1366_2000.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6 a{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;    
+}
+a {
+    font-family: 'Nunito Bold', sans-serif;
+    font-size: 16px;  
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+}
+.menu .navbar-collapse ul li {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+}
+
+@media (max-width: 992px) {
+    .container{
+        height: auto;
+    }
+    .menu{
+        display: contents;        
+        justify-content: flex-end;
+    }
+    .container-menu{
+        display: flex;        
+    }
+    .logo{
+        display: flex;
+        justify-content: center;        
+    }
+    .banner-principal{
+        width: 60%;
+    }
+}
+@media (max-width: 518px){
+    .banner-principal{
+        width: 100%;
+    } 
+}
+@media (max-width: 380px){
+    .banner-principal{
+        width: 100%;
+    }
+    .banner-principal h1{
+        font-size: 30px;
+    }
+    .banner-principal p{
+        font-size: 12px;
+    }  
+}
+
+@media (min-width: 992px) {
+    .logo{
+        display: flex;
+        justify-content: start;        
+    }
+    .menu{
+        display: flex;
+        justify-items: center;        
+        justify-content: flex-end;        
+    }
+}
